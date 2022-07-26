@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=" https://cdn.tailwindcss.com"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <title>Document</title>
+    
+</head>
+    <nav class="text-white flex flex-wrap justify-between bg-cover lg:space-x-11 md:space-x-9 sm:space-x-1 " style="position:fixed;z-index: 1;width:100%;background: rgba(0, 128, 0, 0)" id="sx" >
+        <span class="text-xl flex items-center mx-12 font-extrabold">Paperfactory</span>
+            <ul class="px-28 py-4 flex flex-wrap space-x-11  justify-end">
+            <a href="#benefit">    
+                 <li  class="cursor-pointer text-xl hover:text-gray-600" >Home</li></a>
+                 <a href="#features">
+            <li  class="cursor-pointer text-xl hover:text-gray-600" >Subjects</li></a>
+            <li  ><button class="text-xl hover:text-gray-600">About</button></li>
+            <li class="cursor-pointer text-xl hover:text-gray-600">Contact</li>
+        </ul>
+    </nav>     
+    <div style="height:900px;width:1600px;background: url('dark-study-room-with-computer.jpg') no-repeat;background-size: cover;color:whitesmoke;z-index: 0.1;background-attachment: fixed;padding-top:288px;" class="text-center text-7xl" id="start" >
+        <strong >Paperfactory</strong><br/>     <br/><i >Exclusively for first year:by first year</i></div>
+        <style>
+          #start{
+            animation:  anic 1s linear;
+            animation-timing-function: 1s;
+          }
+          @keyframes anic{
+          from{
+            padding-top:144px;
+          }
+          to{
+            padding-top: 288px;
+          }
+          }
+        </style>
+    <div class="bg-slate-200 h-20" style="z-index: 1;"> </div>
+    <div class="bg-slate-200 h-10" style="z-index: 1;"><ul><li><strong class="mx-12 text-xl">Subjects</strong></li><li><hr style="border-top: 2px solid yellowgreen;width: 100px;" class="mx-32"/></li></ul></div>
+    <div class="bg-slate-200 h-20 text-4xl " style="z-index: 1;"><p class="mx-12 font-extrabold">SUBJECTS</p></div>
+    <!-- <div class="bg-slate-200 h-10" style="z-index: 1;"> </div> -->
+    <div class="bg-slate-200 h-10" style="z-index: 1;"><p class="mx-12 text-2xl">(Some PDFs are of big size , for better experience Download them)</p></div>
+    <ul class=" py-4 flex flex-wrap   justify-center bg-slate-200 space-x-5"  >
+        <li><div class="max-w-sm rounded overflow-hidden shadow-lg" style="background: url('1.jpg') no-repeat 50% 50% ;background-size: contain;"id="svg3">
+            <div class="w-12 h-76"><svg height="250" width="200">
+                <polygon id="poly14" points="0,0 200,0 200,250 100,125 0,250" style="fill:black;stroke:purple;" />
+                <text id="text3"class="px-2 "id="text1" x="40" y="80" font-size="30" fill="white">Math-1</text>
+              </svg>
+              <script type="text/javascript">
+                let svg3=document.querySelector("#svg3");
+
+                svg3.onmouseover= function transformPolygon() {
+                  var myPolygon3 = d3.select(document.querySelector("#poly14"))
+                  myPolygon3
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,50 100,95 0,50")
+                  var text3=d3.select(document.querySelector("#text3"))
+                  text3
+                     .transition()
+                     .duration(500)
+                     .attr('y','40')
+                     
+                }  
+                svg3.onmouseout=function transformPolygon() {
+                  var myPolygon3= d3.select(document.querySelector("#poly14"))
+                  myPolygon3
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,250 100,125 0,250")
+                    var text3=d3.select(document.querySelector("#text3"))
+                  text3
+                     .transition()
+                     .duration(500)
+                     .attr('y','80')
+                }  
+              </script></div>
+            <div class="px-24 py-10">
+            </div>
+          </div></li>
+          <li><div class="max-w-sm rounded overflow-hidden shadow-lg" style="background: url('2.jpg') no-repeat 50% 50% ;background-size: contain;" id="svg2">
+           <div class="w-12 h-76"><svg height="250" width="200">
+                <polygon points="0,0 200,0 200,250 100,125 0,250" id="poly13" style="fill:black;stroke:purple;" />
+                <text id="text2"class="px-2 "id="text1" x="40" y="80" font-size="30" fill="white">Math-2</text>
+              </svg> <script type="text/javascript">
+                let svg2=document.querySelector("#svg2");
+
+                svg2.onmouseover= function transformPolygon() {
+                  var myPolygon2 = d3.select(document.querySelector("#poly13"))
+                  myPolygon2
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,50 100,95 0,50")
+                  var text2=d3.select(document.querySelector("#text2"))
+                  text2
+                     .transition()
+                     .duration(500)
+                     .attr('y','40')
+                     
+                }  
+                svg2.onmouseout=function transformPolygon() {
+                  var myPolygon2= d3.select(document.querySelector("#poly13"))
+                  myPolygon2
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,250 100,125 0,250")
+                    var text3=d3.select(document.querySelector("#text2"))
+                  text3
+                     .transition()
+                     .duration(500)
+                     .attr('y','80')
+                }  
+              </script></div>
+            <div class="px-24 py-10">
+            </div>
+          </div></li>
+          <li><div class="max-w-sm rounded overflow-hidden shadow-lg" style="background: url('3.jpg') no-repeat 50% 50% ;background-size: contain;"id="svg1">
+           <div class="w-12 h-76"><svg height="250" width="200">
+                <polygon points="0,0 200,0 200,250 100,125 0,250" id="poly12" style="fill:black;stroke:purple;" />
+                <text class="px-2 "id="text1" x="40" y="80" font-size="30" fill="white">Physics-1</text>
+              </svg>
+              <script type="text/javascript">
+                let svg1=document.querySelector("#svg1");
+
+                svg1.onmouseover= function transformPolygon() {
+                  var myPolygon1 = d3.select(document.querySelector("#poly12"))
+                  myPolygon1
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,50 100,95 0,50")
+                  var text1=d3.select(document.querySelector("#text1"))
+                  text1
+                     .transition()
+                     .duration(500)
+                     .attr('y','40')
+                     
+                }  
+                svg1.onmouseout=function transformPolygon() {
+                  var myPolygon1= d3.select(document.querySelector("#poly12"))
+                  myPolygon1
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,250 100,125 0,250")
+                    var text1=d3.select(document.querySelector("#text1"))
+                  text1
+                     .transition()
+                     .duration(500)
+                     .attr('y','80')
+                }  
+              </script></div>
+            <div class="px-24 py-10">
+            </div>
+          </div></li>
+          <li><div class="max-w-sm rounded overflow-hidden shadow-lg" style="background: url('4.jpg') no-repeat 50% 50% ;background-size: contain;" id="svg">
+           <div class="w-12 h-76" ><svg height="250" width="200">
+                <polygon id="poly1" points="0,0 200,0 200,250 100,125 0,250" style="fill:black;stroke:purple;" />
+                <text class="px-2 "id="text" x="40" y="80" font-size="30" fill="white">Physics-2</text>
+                <!-- <polygon id="poly2" points="0,0 200,0 200,50 100,95 0,50" style="fill:black;stroke:purple;" /> -->
+              </svg>
+              <script type="text/javascript">
+                let svg=document.querySelector("#svg");
+
+                svg.onmouseover= function transformPolygon() {
+                  var myPolygon = d3.select(document.querySelector("#poly1"))
+                  myPolygon
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,50 100,95 0,50")
+                  var text=d3.select(document.querySelector("#text"))
+                  text
+                     .transition()
+                     .duration(500)
+                     .attr('y','40')
+                     
+                }  
+                svg.onmouseout=function transformPolygon() {
+                  var myPolygon = d3.select(document.querySelector("#poly1"))
+                  myPolygon
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,250 100,125 0,250")
+                    var text=d3.select(document.querySelector("#text"))
+                  text
+                     .transition()
+                     .duration(500)
+                     .attr('y','80')
+                }  
+              </script></div>
+            <div class="px-24 py-10">
+              <!-- <div class="font-bold text-xl mb-2">The Coldest Sunset</div>     -->
+            </div>
+          </div></li>
+        </ul>
+        <ul class=" py-4 flex flex-wrap   justify-center bg-slate-200 space-x-5"  >
+            <li><div class="max-w-sm rounded overflow-hidden shadow-lg" style="background: url('5.jpg') no-repeat 50% 50% ;background-size: contain;" id="svg4">
+               <div class="w-12 h-76"><svg height="250" width="200">
+                <polygon points="0,0 200,0 200,250 100,125 0,250" id="poly21"style="fill:black;stroke:purple;" />
+                <text class="px-2 "id="text4" x="40" y="80" font-size="30" id="text" fill="white">Computer</text>
+              </svg>
+              <script type="text/javascript">
+                let svg4=document.querySelector("#svg4");
+
+                svg4.onmouseover= function transformPolygon() {
+                  var myPolygon21 = d3.select(document.querySelector("#poly21"))
+                  myPolygon21
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,50 100,95 0,50")
+                  var text4=d3.select(document.querySelector("#text4"))
+                  text4
+                     .transition()
+                     .duration(500)
+                     .attr('y','40')
+                     
+                }  
+                svg4.onmouseout=function transformPolygon() {
+                  var myPolygon21 = d3.select(document.querySelector("#poly21"))
+                  myPolygon21
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,250 100,125 0,250")
+                    var text4=d3.select(document.querySelector("#text4"))
+                  text4
+                     .transition()
+                     .duration(500)
+                     .attr('y','80')
+                }  
+              </script>
+             </div>
+                <div class="px-24 py-10">
+                </div>
+              </div></li>
+              <li><div class="max-w-sm rounded overflow-hidden shadow-lg" style="background: url('6.jpg') no-repeat 50% 50% ;background-size: contain;" id="svg5">
+               <div class="w-12 h-76"><svg height="250" width="200">
+                <polygon points="0,0 200,0 200,250 100,125 0,250" id="poly22" style="fill:black;stroke:purple;" />
+                <text class="px-2 "id="text5" x="40" y="80" font-size="30" fill="white">Chemistry</text>
+              </svg><script type="text/javascript">
+                let svg5=document.querySelector("#svg5");
+
+                svg5.onmouseover= function transformPolygon() {
+                  var myPolygon22 = d3.select(document.querySelector("#poly22"))
+                  myPolygon22
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,50 100,95 0,50")
+                  var text5=d3.select(document.querySelector("#text5"))
+                  text5
+                     .transition()
+                     .duration(500)
+                     .attr('y','40')
+                     
+                }  
+                svg5.onmouseout=function transformPolygon() {
+                  var myPolygon22 = d3.select(document.querySelector("#poly22"))
+                  myPolygon22
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,250 100,125 0,250")
+                    var text5=d3.select(document.querySelector("#text5"))
+                  text5
+                     .transition()
+                     .duration(500)
+                     .attr('y','80')
+                }  
+              </script></div>
+                <div class="px-24 py-10">
+                </div>
+              </div></li>
+              <li><div class="max-w-sm rounded overflow-hidden shadow-lg" style="background: url('7.jpg') no-repeat 50% 50% ;background-size: contain;" id="svg6">
+               <div class="w-12 h-76"><svg height="250" width="200">
+                <polygon points="0,0 200,0 200,250 100,125 0,250" id="poly23" style="fill:black;stroke:purple;" />
+                <text class="px-2 "id="text6" x="40" y="80" font-size="30" fill="white">Workshop</text>
+              </svg>
+              <script type="text/javascript">
+                let svg6=document.querySelector("#svg6");
+
+                svg6.onmouseover= function transformPolygon() {
+                  var myPolygon23 = d3.select(document.querySelector("#poly23"))
+                  myPolygon23
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,50 100,95 0,50")
+                  var text6=d3.select(document.querySelector("#text6"))
+                  text6
+                     .transition()
+                     .duration(500)
+                     .attr('y','40')
+                     
+                }  
+                svg6.onmouseout=function transformPolygon() {
+                  var myPolygon23 = d3.select(document.querySelector("#poly23"))
+                  myPolygon23
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,250 100,125 0,250")
+                    var text6=d3.select(document.querySelector("#text6"))
+                  text6
+                     .transition()
+                     .duration(500)
+                     .attr('y','80')
+                }  
+              </script></div>
+                <div class="px-24 py-10">
+                </div>
+              </div></li>
+              <li><div class="max-w-sm rounded overflow-hidden shadow-lg" style="background: url('8.jpg') no-repeat 50% 50% ;background-size: contain;" id="svg7">
+               <div class="w-12 h-76"><svg height="250" width="200">
+                <polygon points="0,0 200,0 200,250 100,125 0,250" style="fill:black;stroke:purple;" id="poly24"/>
+                <text class="px-2 "id="text7" x="40" y="80" font-size="30" fill="white">Drawing</text>
+              </svg><script type="text/javascript">
+                let svg7=document.querySelector("#svg7");
+
+                svg7.onmouseover= function transformPolygon() {
+                  var myPolygon24 = d3.select(document.querySelector("#poly24"))
+                  myPolygon24
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,50 100,95 0,50")
+                  var text7=d3.select(document.querySelector("#text7"))
+                  text7
+                     .transition()
+                     .duration(500)
+                     .attr('y','40')
+                     
+                }  
+                svg7.onmouseout=function transformPolygon() {
+                  var myPolygon24 = d3.select(document.querySelector("#poly24"))
+                  myPolygon24
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,250 100,125 0,250")
+                    var text7=d3.select(document.querySelector("#text7"))
+                  text7
+                     .transition()
+                     .duration(500)
+                     .attr('y','80')
+                }  
+              </script></div>
+                <div class="px-24 py-10">
+                </div>
+              </div></li>
+            </ul>
+            <ul class=" py-4 flex flex-wrap   justify-center bg-slate-200 space-x-5"  >
+                <li><div class="max-w-sm rounded overflow-hidden shadow-lg" style="background: url('9.jpg') no-repeat 50% 50% ;background-size: contain;" id="svg8">
+                   <div class="w-12 h-76"><svg height="250" width="200">
+                <polygon points="0,0 200,0 200,250 100,125 0,250" id="poly31"style="fill:black;stroke:purple;" />
+                <text class="px-2 "id="text8" x="40" y="80" font-size="30" fill="white">Mechanics</text>
+              </svg>
+              <script type="text/javascript">
+                let svg8=document.querySelector("#svg8");
+
+                svg8.onmouseover= function transformPolygon() {
+                  var myPolygon31 = d3.select(document.querySelector("#poly31"))
+                  myPolygon31
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,50 100,95 0,50")
+                  var text8=d3.select(document.querySelector("#text8"))
+                  text8
+                     .transition()
+                     .duration(500)
+                     .attr('y','40')
+                     
+                }  
+                svg8.onmouseout=function transformPolygon() {
+                  var myPolygon31 = d3.select(document.querySelector("#poly31"))
+                  myPolygon31
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,250 100,125 0,250")
+                    var text8=d3.select(document.querySelector("#text8"))
+                  text8
+                     .transition()
+                     .duration(500)
+                     .attr('y','80')
+                }  
+              </script></div>
+                    <div class="px-24 py-10">
+                    </div>
+                  </div></li>
+                  <li><div class="max-w-sm rounded overflow-hidden shadow-lg" style="background: url('10.jpg') no-repeat 50% 50% ;background-size: contain;" id="svg9">
+                   <div class="w-12 h-76"><svg height="250" width="200">
+                <polygon points="0,0 200,0 200,250 100,125 0,250" id="poly32" style="fill:black;stroke:purple;" />
+                <text class="px-2 "id="text9" x="40" y="80" font-size="30" fill="white">English</text>
+              </svg>
+              <script type="text/javascript">
+                let svg9=document.querySelector("#svg9");
+
+                svg9.onmouseover= function transformPolygon() {
+                  var myPolygon32 = d3.select(document.querySelector("#poly32"))
+                  myPolygon32
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,50 100,95 0,50")
+                  var text9=d3.select(document.querySelector("#text9"))
+                  text9
+                     .transition()
+                     .duration(500)
+                     .attr('y','40')
+                     
+                }  
+                svg9.onmouseout=function transformPolygon() {
+                  var myPolygon32 = d3.select(document.querySelector("#poly32"))
+                  myPolygon32
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,250 100,125 0,250")
+                    var text9=d3.select(document.querySelector("#text9"))
+                  text9
+                     .transition()
+                     .duration(500)
+                     .attr('y','80')
+                }  
+              </script></div>
+                    <div class="px-24 py-10">
+                    </div>
+                  </div></li>
+                  <li><div class="max-w-sm rounded overflow-hidden shadow-lg"  style="background: url('11.jpg') no-repeat 50% 50% ;background-size: contain;"id="svg10">
+                   <div class="w-12 h-76"><svg height="250" width="200">
+                <polygon points="0,0 200,0 200,250 100,125 0,250" style="fill:black;stroke:purple;" id="poly33" />
+                <text class="px-2 "id="text10" x="40" y="80" font-size="30" fill="white">C.S.W</text>
+              </svg><script type="text/javascript">
+                let svg10=document.querySelector("#svg10");
+
+                svg10.onmouseover= function transformPolygon() {
+                  var myPolygon33 = d3.select(document.querySelector("#poly33"))
+                  myPolygon33
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,50 100,95 0,50")
+                  var text10=d3.select(document.querySelector("#text10"))
+                  text10
+                     .transition()
+                     .duration(500)
+                     .attr('y','40')
+                     
+                }  
+                svg10.onmouseout=function transformPolygon() {
+                  var myPolygon33 = d3.select(document.querySelector("#poly33"))
+                  myPolygon33
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,250 100,125 0,250")
+                    var text10=d3.select(document.querySelector("#text10"))
+                  text10
+                     .transition()
+                     .duration(500)
+                     .attr('y','80')
+                }  
+              </script></div>
+                    <div class="px-24 py-10">
+                    </div>
+                  </div></li>
+                  <li><div class="max-w-sm rounded overflow-hidden shadow-lg" style="background: url('12.jpg') no-repeat 50% 50% ;background-size: contain;" id="svg11">
+                   <div class="w-12 h-76"><svg height="250" width="200">
+                <polygon points="0,0 200,0 200,250 100,125 0,250" style="fill:black;stroke:purple;" id="poly34"/>
+                <text class="px-2 "id="text11" x="40" y="80" font-size="30" fill="white">Ecology</text>
+              </svg><script type="text/javascript">
+                let svg11=document.querySelector("#svg11");
+
+                svg11.onmouseover= function transformPolygon() {
+                  var myPolygon34 = d3.select(document.querySelector("#poly34"))
+                  myPolygon34
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,50 100,95 0,50")
+                  var text11=d3.select(document.querySelector("#text11"))
+                  text11
+                     .transition()
+                     .duration(500)
+                     .attr('y','40')
+                     
+                }  
+                svg11.onmouseout=function transformPolygon() {
+                  var myPolygon34 = d3.select(document.querySelector("#poly34"))
+                  myPolygon34
+                    .transition()
+                    .duration(500)
+                    // .ease("elastic")
+                    .attr('fill','black')
+                    .attr('points',"0,0 200,0 200,250 100,125 0,250")
+                    var text11=d3.select(document.querySelector("#text11"))
+                  text11
+                     .transition()
+                     .duration(500)
+                     .attr('y','80')
+                }  
+              </script></div>
+                    <div class="px-24 py-10">
+                    </div>
+                  </div></li>
+                </ul>
+                <script>
+                    sx=document.querySelector("#sx");
+                    svg=document.querySelector("#svg");
+                    poly1=document.querySelector("#poly1");
+                    poly2=document.querySelector("#poly2");
+                    window.addEventListener('scroll', function() {
+  if(window.pageYOffset>500){
+  sx.style.background="rgba(0, 0, 0, 0.7)";
+}
+else{
+    sx.style.background="rgba(0, 128, 0, 0)";
+}});
+r4r=document.querySelector("#r4r");
+                      cdd=document.querySelector("#cdd");
+                      if (window.pageYOffset>3000){
+                        r4r.classList.add('cont2ani')
+                        cdd.classList.add('cont1ani')
+                      }
+                </script>
+                    <div class="bg-slate-200 h-20" style="z-index: 1;"> </div>
+                    <div class="bg-slate-200 h-10" style="z-index: 1;"><ul><li><strong class="mx-12 text-xl">About</strong></li><li><hr style="border-top: 2px solid yellowgreen;width: 100px;" class="mx-32"/></li></ul></div>
+                    <div class="bg-slate-200 h-20 text-5xl " style="z-index: 1;"><p class="mx-12 font-extrabold">ABOUT</p></div>
+                    <div class="bg-slate-200 h-10" style="z-index: 1;"> </div>
+                    <ul class=" py-4 flex flex-wrap   justify-center bg-slate-200 ">
+                      <li style="padding-right:0px ;" id="r4r">
+                        <p class="mx-12 text-3xl font-bold">"Education is not the learning of facts,<br/> but the training of mind to think."<br/>-Albert Einstein</p>
+                        <p class="mx-12 text-xl pt-3 pb-3"><i>Welcome to PAPER FACTORY - <br/>" Exculsively for First Year : By First Year " <br/> Platform where you are going to find every<br/> material related to your subjects</i></p>
+                        <ul style="list-style-type:square;" class="pl-12">
+                          <li>Papers for Midsems as well as Endsems.</li>
+                          <li>Books related to every Subject</li>
+                          <li>Important Notes of your Seniors</li>
+                          <li>Tutorial Sheets and Assignment Questions</li>
+                          <li>Lab Files and Manuals</li>
+                        </ul>
+                      </li>
+                      <li style="padding-left:00px;" id="cdd">
+                        <img src="b1.jpg" class="h-96 w-96"/>
+                      </li>
+                    </ul>
+                    <style>
+                      .cont2ani{
+                        animation:  anic2 2s linear;
+                        animation-timing-function: 1s;
+                      }
+                      @keyframes anic2 {
+                        from{padding-right: 500px;}
+                        to{padding-right: 0px;}
+                      }
+                      .cont1ani{
+                        animation:  anic1 2s linear;
+                        animation-timing-function: 1s;
+                      }
+                      @keyframes anic1 {
+                        from{padding-left: 500px;}
+                        to{padding-left: 0px;}
+                      }
+                    </style>
+                    <div class="bg-slate-200 h-10" style="z-index: 1;"> </div>
+                    <nav class="text-white bg-slate-900 h-60 flex flex-wrap justify-start  lg:space-x-11 md:space-x-9 sm:space-x-1  " style="z-index: 1;"  >
+                          <ul class="px-28 py-4 flex flex-wrap space-x-11  justify-start">
+                         
+                               <li  ><p class="text-3xl font-bold pb-2">PAPER FACTORY</p><br/>- Exclusively for First Year : By First Year</li>
+                       
+                          <li  class="text-xl 0" ><p class="pb-1">A paper site for:</p><br/><p class="hover:text-gray-600">MNNIT,Allahabad</p></li>
+                          <!-- <li  ><button class="text-xl hover:text-gray-600">About</button></li> -->
+                          <li class=" text-xl"><p class="pb-1">Cloned By :</p><br/>Vedant Pandey (About)<br/><p class="pb-0.25">Email:</p><br/>abc@gmail.com</li>
+                      </ul>
+                  </nav>   
+                  <nav class="text-white flex flex-wrap justify-center bg-cover h-16 " style="z-index: 1;width:100%;background: rgba(0, 0, 0)"  >
+                    <span class="text-xl flex items-center mx-12 font-mono">© Copyright Paper Factory. All Rights Reserved</span></nav>
+</body>
+</html>
